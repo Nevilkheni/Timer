@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.stopwatch-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#display {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+
+}
+
+
+@media (max-width:800px) {
+    .button-container{
+        grid-template-columns: auto;
+        grid-gap: 10px;
+    }
+    
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.button:active {
+    background-color: #1f6396;
+}
+
+#clearTime_btn {
+    background-color: #e74c3c;
+    width: 200px;
+    
+}
+
+#clearTime_btn:hover {
+    background-color: #c0392b;
+}
+
+#clearTime_btn:active {
+    background-color: #a93226;
+}
